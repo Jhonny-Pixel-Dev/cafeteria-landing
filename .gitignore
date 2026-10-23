@@ -1,0 +1,20 @@
+# Notas privadas para Claude (no se publican)
+CLAUDE.md
+
+# Dependencias de Node
+node_modules/
+
+# Archivos de entorno (pueden tener claves secretas)
+.env
+.env.*
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuración local del editor
+.vscode/
+
+# Despliegue
+.vercel/
+.netlify/

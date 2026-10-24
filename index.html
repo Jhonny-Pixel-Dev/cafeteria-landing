@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Café Frontera · Cafetería en Cúcuta</title>
+  <meta name="description" content="Café Frontera: café de origen colombiano en Cúcuta. Donde se cruzan los caminos.">
+  <link rel="icon" href="img/isotipo-cf.svg" type="image/svg+xml">
+
+  <!-- Solo los pesos que usamos: Fraunces 700, 900 y cursiva 400; Work Sans 400, 500, 600 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;0,9..144,900;1,9..144,400&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body>
+
+  <main>
+    <!-- HERO -->
+    <section id="inicio" class="relative flex min-h-svh items-center overflow-hidden">
+
+      <!-- Rosa de los vientos como marca de agua (decorativa: aria-hidden) -->
+      <svg class="logo pointer-events-none absolute -right-32 -bottom-32 w-[28rem] opacity-10 md:w-[44rem]"
+           viewBox="0 0 200 200" aria-hidden="true">
+        <circle cx="100" cy="100" r="80" fill="none" style="stroke:var(--accent)" stroke-width="1.5" />
+        <circle cx="100" cy="100" r="66" fill="none" style="stroke:var(--second)" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 9" />
+        <path d="M30,100 L100,90 L170,100 L100,110 Z" style="fill:var(--accent)" />
+        <path d="M100,24 L112,100 L100,176 L88,100 Z" style="fill:var(--ink)" />
+      </svg>
+
+      <div class="relative mx-auto grid w-full max-w-6xl items-center gap-10 px-4 py-16 md:grid-cols-2 md:px-8">
+
+        <!-- Texto -->
+        <div class="order-2 text-center md:order-1 md:text-left">
+          <p class="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-oliva">
+            Café de origen · Cúcuta
+          </p>
+          <h1 class="font-display text-5xl leading-none font-black sm:text-6xl lg:text-7xl">
+            Café Frontera
+          </h1>
+          <p class="mt-4 font-display text-2xl italic text-oliva sm:text-3xl">
+            Donde se cruzan los caminos
+          </p>
+          <p class="mx-auto mt-6 max-w-md leading-relaxed md:mx-0">
+            Café de origen colombiano, tostado y preparado con calma en el corazón de Cúcuta.
+            Un punto de encuentro para quienes van y vienen.
+          </p>
+          <a href="#menu"
+             class="mt-8 inline-block rounded-full bg-terracota px-8 py-3 font-semibold text-white transition-colors hover:bg-cafe focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-mostaza">
+            Ver menú
+          </a>
+        </div>
+
+        <!-- Logo principal: sello de pasaporte -->
+        <div class="order-1 flex justify-center md:order-2">
+          <svg class="logo w-48 sm:w-60 md:w-80 lg:w-96" viewBox="0 0 200 200" role="img" aria-label="Logo de Café Frontera">
+            <defs>
+              <path id="circulo-texto" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" />
+            </defs>
+            <g transform="rotate(-8 100 100)">
+              <circle cx="100" cy="100" r="92" fill="none" style="stroke:var(--accent)" stroke-width="5" />
+              <circle cx="100" cy="100" r="84" fill="none" style="stroke:var(--accent)" stroke-width="1.5" />
+              <circle cx="100" cy="100" r="54" fill="none" style="stroke:var(--accent)" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 9" />
+              <text font-family="Work Sans, sans-serif" font-weight="600" font-size="13" style="fill:var(--accent)">
+                <textPath href="#circulo-texto" textLength="436" lengthAdjust="spacing">CAFÉ FRONTERA ✦ DONDE SE CRUZAN LOS CAMINOS ✦</textPath>
+              </text>
+              <g transform="rotate(30 100 100)">
+                <ellipse cx="100" cy="100" rx="20" ry="28" style="fill:var(--ink)" />
+                <path d="M100,74 C90,90 110,110 100,126" fill="none" style="stroke:var(--bg)" stroke-width="3.5" stroke-linecap="round" />
+              </g>
+            </g>
+          </svg>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

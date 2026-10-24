@@ -4,6 +4,9 @@ CLAUDE.md
 # Dependencias de Node
 node_modules/
 
+# CSS generado por Tailwind (se crea con npm run build)
+dist/
+
 # Archivos de entorno (pueden tener claves secretas)
 .env
 .env.*

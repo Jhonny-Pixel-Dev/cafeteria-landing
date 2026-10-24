@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <title>Café Frontera</title>
+  <defs>
+    <path id="circulo-texto" d="M100,100 m-70,0 a70,70 0 1,1 140,0 a70,70 0 1,1 -140,0" />
+  </defs>
+  <g transform="rotate(-8 100 100)">
+    <circle cx="100" cy="100" r="92" fill="none" stroke="#B4471F" stroke-width="5" />
+    <circle cx="100" cy="100" r="84" fill="none" stroke="#B4471F" stroke-width="1.5" />
+    <circle cx="100" cy="100" r="54" fill="none" stroke="#B4471F" stroke-width="4" stroke-linecap="round" stroke-dasharray="0.1 9" />
+    <text font-family="Work Sans, sans-serif" font-weight="600" font-size="13" fill="#B4471F">
+      <textPath href="#circulo-texto" textLength="436" lengthAdjust="spacing">CAFÉ FRONTERA ✦ DONDE SE CRUZAN LOS CAMINOS ✦</textPath>
+    </text>
+    <g transform="rotate(30 100 100)">
+      <ellipse cx="100" cy="100" rx="20" ry="28" fill="#3B2418" />
+      <path d="M100,74 C90,90 110,110 100,126" fill="none" stroke="#F4EADB" stroke-width="3.5" stroke-linecap="round" />
+    </g>
+  </g>
+</svg>

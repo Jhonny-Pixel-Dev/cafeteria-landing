@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Marca Café Frontera: cada variable se convierte en clases de Tailwind.
+   --color-terracota → bg-terracota, text-terracota, border-terracota...
+   --font-display    → font-display
+   "static" hace que todas las variables existan en el CSS final,
+   aunque no se usen como clase (los logos SVG las necesitan). */
+@theme static {
+  --color-arena: #F4EADB;     /* fondo */
+  --color-cafe: #3B2418;      /* texto */
+  --color-terracota: #B4471F; /* botones y acentos */
+  --color-mostaza: #D9A43A;   /* solo detalles, nunca texto sobre arena */
+  --color-oliva: #5E6B3A;     /* secundario */
+
+  --font-display: "Fraunces", serif;
+  --font-body: "Work Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-arena font-body text-cafe antialiased;
+  }
+}
+
+/* Roles de color de los logos SVG (ver sistema de logo en la marca) */
+.logo {
+  --ink: var(--color-cafe);
+  --accent: var(--color-terracota);
+  --detail: var(--color-mostaza);
+  --second: var(--color-oliva);
+  --bg: var(--color-arena);
+}
+
+/* Sobre café tostado el terracota no contrasta (2.2:1): el acento pasa a mostaza */
+.logo-dark {
+  --ink: var(--color-arena);
+  --accent: var(--color-mostaza);
+  --detail: var(--color-arena);
+  --second: var(--color-arena);
+  --bg: var(--color-cafe);
+}
